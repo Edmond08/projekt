@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Jegykezelő</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<script src="kulso.js"></script>
+<div class="container">
+    <h1>📚 Jegykezelő rendszer</h1>
+
+    <div class="card">
+        <label>Szerepkör:</label>
+        <select id="role">
+            <option value="student">Diák</option>
+            <option value="teacher">Tanár</option>
+        </select>
+    </div>
+
+    <div class="card form">
+        <h2>Új jegy</h2>
+        <input type="text" id="studentName" placeholder="Diák neve">
+        <input type="text" id="subject" placeholder="Tantárgy">
+        <input type="number" id="grade" placeholder="Jegy (1-5)">
+        <button onclick="addGrade()">➕ Hozzáadás</button>
+    </div>
+
+    <div class="card">
+        <h2>Jegyek</h2>
+        <div id="app"></div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
